@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-spacing: 5px;
+        }
+        th,td{
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <progress value="20" max="200"></progress>
+    <h2>Table case 1</h2>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>gender</th>
+            <th colspan="2">age</th>
+        </tr>
+        <tr>
+            <td style="background-color: aqua;">yw</td>
+            <td style="background-color: aqua;">女</td>
+            <td style="background-color: aqua;">19</td>
+            <td style="background-color: aqua;">18</td>
+        </tr>
+        <tr>
+            <td>lj</td>
+            <td>男</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>Table case 2</h2>
+    <table>
+        <tr>
+            <th>name</th>
+            <td>g</td>
+        </tr>
+        <tr>
+            <th rowspan="2">telephone:</th>
+            <td>11111</td>
+        </tr>
+        <tr>
+            <td>22222</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <form action="">
+        name:<input type="text" name="firstname" placeholder="请输入你的姓名"> 
+        gender:<input type="text" name="gender" id="">
+        <br>
+        <input type="radio" name="gender" value="男">Male
+        <br>
+        <input type="radio" name="gender" value="女" checked>Female
+        <br>
+        hobby:
+        <br>
+        <input type="checkbox" name="hobby" value="reading" checked>reading
+        <br>
+        <input type="checkbox" name="hobby" value="singing" checked>singing
+        <br>
+        <hr>
+        <br>
+        Birthday:
+        <input type="date" name="Birthday">
+        <input type="range" min="-100" max="100" value="0" s>
+    </form>
+
+</body>
+</html>
