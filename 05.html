@@ -39,6 +39,11 @@
         text-align: center;
         position: absolute;
     }
+    img{
+        float: left;
+        width: 90px;
+        height: 90px;
+    }
     p{
         font-size: 20px;
         border: 2px solid black;
@@ -55,7 +60,8 @@
         margin: 0%;
         overflow: hidden;
         position: fixed;
-        top: 0;
+        left: 120px;
+        top: 30px;
         width: 100%;
     }
     li{
@@ -67,15 +73,15 @@
         text-align: center;
         text-decoration: none;
         color: black;
-        background-color: #f1f1f1;
         font-size: 16px;
     }
     li img{
-        width: 90px;
+        width: 100px;
         height: 90px;
     }  
     .dropbpn{
         color: black;
+        background-color: rgb(147, 223, 147);
         padding:14px 16px;
         font-size: 16px;
         border: none;
@@ -83,7 +89,6 @@
         text-align: center;
     }
     .dropdown{
-        position: relative;
         display: inline-block;
     }
     .dropdown-content{
@@ -100,7 +105,7 @@
     }
     .dropdown-content a:hover{
         background-color: #f1f1f1;
-        color: rgb(102, 95, 95);
+        color: rgb(10, 45, 238);
     }
     .dropdown:hover .dropdown-content{
         display: block;
@@ -112,8 +117,8 @@
                 <p>search</p>
             </form>
      <div class="dropdown">
+        <img src="M.png" alt="">
         <ul>
-            <li><img src="M.png" alt=""></li>
             <li><a href="#">picture</a></li>
             <li><a href="#">video</a></li>
             <li> <button class="dropbpn">dropdown</button>
