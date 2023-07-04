@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+	</head>
+	<style>
+/*让整个页面内容在显示时处于一个什么样的位置*/
+#wrapper {
+    width: 1200px;
+    margin: auto;
+    font-size: 14px;
+    background: #eee;
+}
+/*header部分的样式，内容一行显示，横轴纵轴居中，下边框*/
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	border-bottom: 2px solid #24cca7;
+}
+/*列表样式，一行显示，横轴纵轴居中对齐*/
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*列表部分*/
+#header ul li {
+    padding: 20px;
+    font-size: 20px;
+}
+/*R部分的样式*/
+.logo {
+    font-size: 20px;
+    color: #24cca7;
+    text-shadow: 5px 5px 5px #570779;/*水平、垂直、模糊距离、颜色*/
+}
+/*h2标题*/
+h2{
+	display: inline-block;
+	border-bottom: 3px solid #24cca7;
+	margin-bottom: 10px;
+}
+/*Hi这一部分作为flex项在一样的区域内显示。最大限度地使用空间*/
+#banner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+/*图片的宽度占据页面*/
+#banner .image {
+    width: 100%;
+}
+/*图像的大小*/
+#banner .image img {
+    width: 100%;
+    height: 400px;
+}
+/*文本部分文本居中，设置宽度为一半*/
+#banner .content {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+}
+/*header部分文本的大小*/
+#banner .content p {
+    font-size: 16px;
+}
+/*按钮*/
+.actions {
+    margin-top: 15px;
+    padding: 0;
+}
+/*按钮*/
+.button {
+	border-bottom: 3px solid #24cca7;
+	border-radius: 5px;
+	font-weight: bold;
+    padding: 10px 20px;
+}
+/*features这一部分的排版*/
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*文字块排版*/
+.features article {
+    width: 24%;
+    margin: 1%;
+    border-radius: 8px;
+}
+/*文字对齐方式*/
+.features article p {
+    text-align: left;
+}
+/*使图像和文字这一部分作为flex项在一样的区域内显示。最大限度地使用空间，
+使这一部分上下显示，同时在容器中央垂直对齐*/
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*自动换行*/
+}
+/*这一部分的所有article内的内容显示效果*/
+.posts article {
+    width: 48%;
+    margin: 1%;
+    box-shadow: 0 10px 10px #999;
+    text-align: center;
+    padding-bottom: 20px;
+}
+/*外边距*/
+.posts article h3 {
+    margin-top: 20px;
+}
+/*这一部分的效果*/
+#sidebar {
+    width: 100%;
+    padding-top: 20px 15px;
+	background-color: #efe7e7;
+}
+/*设置input表格的宽度和内边距*/
+#query {
+    width: 150px;
+    padding: 5px 10px;
+}
+/*设置这一部分的居中、行高、字体大小*/
+.inner {
+    text-align: center;
+    line-height: 2;
+    font-size: 14px;
+}
+/*major部分的文本效果*/
+#major p {
+    width: 50%;
+    margin: auto;
+}
+/*尾部背景颜色、字体大小、文本居中、外边距、内边距*/
+#footer {
+	background-color: #24cca7;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+/*所有列表前面没有那个标识*/
+li {
+    list-style: none;
+}
+/*所有链接没有下划线和设置颜色*/
+a {
+    text-decoration: none;
+    color: #303030;
+}
+	</style>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Recommendations</strong> from Hermes</a>
+									<ul class="icons">
+										<li><a href="#" ><span class="label">Twitter</span></a></li>
+										<li><a href="#" ><span class="label">Facebook</span></a></li>
+										<li><a href="#" ><span class="label">Snapchat</span></a></li>
+										<li><a href="#" ><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m member of the family<br />
+											of Hermes</h1>
+										</header>
+										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<ul class="actions">
+											<li><a href="#" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Features</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="Luxury"></span>
+											<div class="content">
+												<h3>Luxury</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="HighQuality"></span>
+											<div class="content">
+												<h3>High Quality</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="LimitedEdition"></span>
+											<div class="content">
+												<h3>Limited Edition</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="AfterService"></span>
+											<div class="content">
+												<h3>After Service</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Goods from Hermes</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Jewels</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Pearls</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Bags</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Cloth</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Shoes</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Hats</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="phone">(000) 000-0000</li>
+										<li class="home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="#">HTML5</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+
+	</body>
+</html>

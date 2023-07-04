@@ -1,0 +1,119 @@
+/*让整个页面内容在显示时处于一个什么样的位置*/
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    font-size: 14px;
+}
+/* 设置列表、链接和字体的样式*/
+li:first{
+    float: left;
+    background-color: rgb(240, 240, 218);
+}
+li span{
+    display: block;
+    color: rgb(62, 53, 53);
+    padding: 10px 6px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/*更改悬停时的连接颜色*/
+li span:hover{
+    background-color: #4caf50;
+    color: #ba6868;
+}
+/*Hi这一部分与右边分为两栏，图片文字各占50%，同时使这两部分作为flex项在一样的区域内显示。最大限度地使用空间*/
+#banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*图片的宽度占据页面的一半*/
+#banner .image {
+    width: 50%;
+}
+/*该图像的大小*/
+#banner .image img {
+    width: 100%;
+    height: 400px;
+}
+/*所有列表前面没有那个标识*/
+li {
+    list-style: none;
+}
+/*所有链接没有下划线和设置颜色*/
+a {
+    text-decoration: none;
+    color: #303030;
+}
+/*文本部分文本居中，设置宽度为一半*/
+#banner .content {
+    text-align: center;
+    width: 50%;
+}
+/*class=actions这个元素也就是指定的列表的外边距和内边距*/
+.actions {
+    margin-top: 30px;
+    padding: 5px;
+}
+/*按钮的样式*/
+.button {
+    background-color: #9a9a9a;
+    color: #fff;
+    padding: 10px 20px;
+}
+/*使图像和文字这一部分作为flex项在一样的区域内显示。最大限度地使用空间，
+使这一部分上下显示，同时在容器中央垂直对齐*/
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*这一部分的所有article内的排版效果*/
+.posts article {
+    width: 31%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid #9a9a9a;
+}
+/*这一部分的所有article内的图片的排版效果、宽高比*/
+.posts article .image img {
+    aspect-ratio: 5/2;
+    object-fit: cover;
+    width: 100%;
+}
+/*sidebar这一部分占据页面的大小和内边距*/
+#sidebar {
+    width: 100%;
+    padding-top: 40px;
+}
+/*设置input表格的宽度和内边距*/
+#query {
+    width: 150px;
+    padding: 5px 10px;
+}
+/*设置inner里面的两部分在同一行显示，分别占据不同的栏大小*/
+#search {
+    width: 30%;
+    display: inline-block;
+}
+#menu {
+    width: 50%;
+    display: inline-block;
+}
+#major {
+    width: 50%;
+}
+/*尾部背景颜色、字体大小、文本居中、外边距、内边距*/
+#footer {
+    background: #cecece;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}

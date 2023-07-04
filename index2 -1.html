@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	</head>
+	<style>
+		/*让整个页面内容在显示时处于一个什么样的位置*/
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    font-size: 14px;
+}
+/* 设置列表、链接和字体的样式*/
+li:first{
+    float: left;
+    background-color: rgb(240, 240, 218);
+}
+li span{
+    display: block;
+    color: rgb(62, 53, 53);
+    padding: 10px 6px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/*更改悬停时的连接颜色*/
+li span:hover{
+    background-color: #4caf50;
+    color: #ba6868;
+}
+/*Hi这一部分与右边分为两栏，图片文字各占50%，同时使这两部分作为flex项在一样的区域内显示。最大限度地使用空间*/
+#banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*图片的宽度占据页面的一半*/
+#banner .image {
+    width: 50%;
+}
+/*该图像的大小*/
+#banner .image img {
+    width: 100%;
+    height: 400px;
+}
+/*所有列表前面没有那个标识*/
+li {
+    list-style: none;
+}
+/*所有链接没有下划线和设置颜色*/
+a {
+    text-decoration: none;
+    color: #303030;
+}
+/*文本部分文本居中，设置宽度为一半*/
+#banner .content {
+    text-align: center;
+    width: 50%;
+}
+/*class=actions这个元素也就是指定的列表的外边距和内边距*/
+.actions {
+    margin-top: 30px;
+    padding: 5px;
+}
+/*按钮的样式*/
+.button {
+    background-color: #9a9a9a;
+    color: #fff;
+    padding: 10px 20px;
+}
+/*使图像和文字这一部分作为flex项在一样的区域内显示。最大限度地使用空间，
+使这一部分上下显示，同时在容器中央垂直对齐*/
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*这一部分的所有article内的排版效果*/
+.posts article {
+    width: 31%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid #9a9a9a;
+}
+/*这一部分的所有article内的图片的排版效果、宽高比*/
+.posts article .image img {
+    aspect-ratio: 5/2;
+    object-fit: cover;
+    width: 100%;
+}
+/*sidebar这一部分占据页面的大小和内边距*/
+#sidebar {
+    width: 100%;
+    padding-top: 40px;
+}
+/*设置input表格的宽度和内边距*/
+#query {
+    width: 150px;
+    padding: 5px 10px;
+}
+/*设置inner里面的两部分在同一行显示，分别占据不同的栏大小*/
+#search {
+    width: 30%;
+    display: inline-block;
+}
+#menu {
+    width: 50%;
+    display: inline-block;
+}
+#major {
+    width: 50%;
+}
+/*尾部背景颜色、字体大小、文本居中、外边距、内边距*/
+#footer {
+    background: #cecece;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+	</style>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Recommendations</strong> from Hermes</a>
+									<ul class="icons">
+										<li><a href="#" ><span class="label">Twitter</span></a></li>
+										<li><a href="#" ><span class="label">Facebook</span></a></li>
+										<li><a href="#" ><span class="label">Snapchat</span></a></li>
+										<li><a href="#" ><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m member of the family<br />
+											of Hermes</h1>
+										</header>
+										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<ul class="actions">
+											<li><a href="#" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Features</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="Luxury"></span>
+											<div class="content">
+												<h3>Luxury</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="HighQuality"></span>
+											<div class="content">
+												<h3>High Quality</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="LimitedEdition"></span>
+											<div class="content">
+												<h3>Limited Edition</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="AfterService"></span>
+											<div class="content">
+												<h3>After Service</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Goods from Hermes</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Jewels</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Pearls</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Bags</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Cloth</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Shoes</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Hats</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="phone">(000) 000-0000</li>
+										<li class="home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="#">HTML5</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+
+	</body>
+</html>
